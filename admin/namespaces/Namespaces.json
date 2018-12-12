@@ -41,13 +41,6 @@
     "upstreamRepository" : "",
     "patternCollection" : false
   },
-  "http://opentosca.org/policytypes/patterns" : {
-    "namespace" : "http://opentosca.org/policytypes/patterns",
-    "prefix" : "otptyIgeneral",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "patternCollection" : true
-  },
   "http://winery.opentosca.org/test/relationshiptypes" : {
     "namespace" : "http://winery.opentosca.org/test/relationshiptypes",
     "prefix" : "ntyIgeneral1",
@@ -61,6 +54,13 @@
     "readableName" : "W3C XML schema namespace",
     "upstreamRepository" : "",
     "patternCollection" : false
+  },
+  "http://opentosca.org/policytypes/patterns" : {
+    "namespace" : "http://opentosca.org/policytypes/patterns",
+    "prefix" : "otptyIgeneral",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : true
   },
   "http://winery.opentosca.org/test/servicetemplates" : {
     "namespace" : "http://winery.opentosca.org/test/servicetemplates",
