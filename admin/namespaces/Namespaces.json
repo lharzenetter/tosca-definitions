@@ -41,6 +41,13 @@
     "upstreamRepository" : "",
     "patternCollection" : false
   },
+  "http://opentosca.org/testrefinementmodels" : {
+    "namespace" : "http://opentosca.org/testrefinementmodels",
+    "prefix" : "otItestrefinementmodels",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false
+  },
   "http://winery.opentosca.org/test/relationshiptypes" : {
     "namespace" : "http://winery.opentosca.org/test/relationshiptypes",
     "prefix" : "ntyIgeneral1",
@@ -83,10 +90,24 @@
     "upstreamRepository" : "",
     "patternCollection" : true
   },
+  "http://opentosca.org/test/mimic/nodetypes" : {
+    "namespace" : "http://opentosca.org/test/mimic/nodetypes",
+    "prefix" : "otntyIgeneral",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false
+  },
   "http://www.opentosca.org/winery/extensions/tosca/2013/02/12" : {
     "namespace" : "http://www.opentosca.org/winery/extensions/tosca/2013/02/12",
     "prefix" : "winery",
     "readableName" : "TOSCA extension by Eclipse Winery",
+    "upstreamRepository" : "",
+    "patternCollection" : false
+  },
+  "http://opentosca.org/servicetemplates" : {
+    "namespace" : "http://opentosca.org/servicetemplates",
+    "prefix" : "otsteIgeneral",
+    "readableName" : "",
     "upstreamRepository" : "",
     "patternCollection" : false
   },
