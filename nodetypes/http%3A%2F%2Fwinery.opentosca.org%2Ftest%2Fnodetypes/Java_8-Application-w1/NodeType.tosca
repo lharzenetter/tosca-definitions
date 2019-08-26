@@ -7,5 +7,6 @@
         <CapabilityDefinitions>
             <CapabilityDefinition xmlns:ctyIgeneral="http://winery.opentosca.org/test/capabilitytypes" name="Java VM 8" capabilityType="ctyIgeneral:Java-8-Runtime_w1" lowerBound="1" upperBound="1"/>
         </CapabilityDefinitions>
+        <DerivedFrom xmlns:otntyIgeneral1="http://opentosca.org/test/nodetypes" typeRef="otntyIgeneral1:Application_w1"/>
     </NodeType>
 </Definitions>

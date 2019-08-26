@@ -10,7 +10,8 @@
             </NodeTemplate>
             <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Processor" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="Java_8-Application-w1" winery:x="850" winery:y="109">
                 <Policies>
-                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Static-Workload_w1-wip1"/>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="stateless" policyType="otptyIgeneral:Stateless-Component_w1-wip1"/>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Unpredictable-Workload_w1-wip1"/>
                 </Policies>
             </NodeTemplate>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Public-Cloud" minInstances="1" maxInstances="1" type="ntyIgeneral:Public-Cloud_w1" id="Public-Cloud_w1" winery:x="758" winery:y="705"/>
@@ -18,8 +19,16 @@
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="MessageChannel" minInstances="1" maxInstances="1" type="ntyIgeneral:MessageChannel_w1" id="MessageChannel_w1" winery:x="595" winery:y="115"/>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Execution-Environment" minInstances="1" maxInstances="1" type="ntyIgeneral:Execution-Environment_w1" id="Execution-Environment_w1" winery:x="1471" winery:y="265"/>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Private-Cloud" minInstances="1" maxInstances="1" type="ntyIgeneral:Private-Cloud_w1" id="Private-Cloud_w1" winery:x="1471" winery:y="446"/>
-            <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Relational-Database" minInstances="1" maxInstances="1" type="ntyIgeneral:Relational-Database_w1" id="Relational-Database_w1" winery:x="1220" winery:y="105"/>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Management UI" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="Java_8-Application-w1_2" winery:x="1402" winery:y="92"/>
+            <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Relational-Database" minInstances="1" maxInstances="1" type="ntyIgeneral:Relational-Database_w1" id="Relational-Database_w1" winery:x="1220" winery:y="105">
+                <Policies>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="stateful" policyType="otptyIgeneral:Stateful-Component_w1-wip1"/>
+                </Policies>
+            </NodeTemplate>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Management UI" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="Java_8-Application-w1_2" winery:x="1402" winery:y="92">
+                <Policies>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Static-Workload_w1-wip1"/>
+                </Policies>
+            </NodeTemplate>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Platform-as-a-Service_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Platform-as-a-Service_w1" id="Platform-as-a-Service_w1" winery:x="286" winery:y="334"/>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Platform-as-a-Service_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Platform-as-a-Service_w1" id="Platform-as-a-Service_w1_2" winery:x="997" winery:y="348"/>
             <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="con_3" type="ntyIgeneral1:hostedOn" id="con_3">

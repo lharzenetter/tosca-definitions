@@ -1,16 +1,115 @@
 {
-  "http://winery.opentosca.org/test/concrete/patternrefinementmodels" : {
-    "namespace" : "http://winery.opentosca.org/test/concrete/patternrefinementmodels",
-    "prefix" : "patternrefinementmodels",
+  "http://opentosca.org/policytemplates/patterns" : {
+    "namespace" : "http://opentosca.org/policytemplates/patterns",
+    "prefix" : "otpteIpatterns",
     "readableName" : "",
     "upstreamRepository" : "",
     "patternCollection" : false,
     "secureCollection" : false,
     "generatedNamespace" : false
   },
-  "http://opentosca.org/policytemplates/patterns" : {
-    "namespace" : "http://opentosca.org/policytemplates/patterns",
-    "prefix" : "otpteIpatterns",
+  "http://winery.opentosca.org/test/patternrefinementmodels" : {
+    "namespace" : "http://winery.opentosca.org/test/patternrefinementmodels",
+    "prefix" : "patternrefinementmodels1",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://docs.oasis-open.org/tosca/ns/2011/12" : {
+    "namespace" : "http://docs.oasis-open.org/tosca/ns/2011/12",
+    "prefix" : "tosca",
+    "readableName" : "Predefined TOSCA elements",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://winery.opentosca.org/test/nodetypes" : {
+    "namespace" : "http://winery.opentosca.org/test/nodetypes",
+    "prefix" : "ntyIgeneral3",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://www.w3.org/2001/XMLSchema" : {
+    "namespace" : "http://www.w3.org/2001/XMLSchema",
+    "prefix" : "xsd",
+    "readableName" : "W3C XML schema namespace",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://winery.opentosca.org/test/servicetemplates" : {
+    "namespace" : "http://winery.opentosca.org/test/servicetemplates",
+    "prefix" : "steIgeneral",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://opentosca.org/test/mimic/nodetypes" : {
+    "namespace" : "http://opentosca.org/test/mimic/nodetypes",
+    "prefix" : "otntyIgeneral",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://www.opentosca.org/winery/extensions/tosca/2013/02/12" : {
+    "namespace" : "http://www.opentosca.org/winery/extensions/tosca/2013/02/12",
+    "prefix" : "winery",
+    "readableName" : "TOSCA extension by Eclipse Winery",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://opentosca.org/test/nodetypes" : {
+    "namespace" : "http://opentosca.org/test/nodetypes",
+    "prefix" : "otntyIgeneral1",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://opentosca.org/servicetemplates" : {
+    "namespace" : "http://opentosca.org/servicetemplates",
+    "prefix" : "otsteIgeneral",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://winery.opentosca.org/test/concrete/policytypes" : {
+    "namespace" : "http://winery.opentosca.org/test/concrete/policytypes",
+    "prefix" : "ptyIgeneral",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "waf" : {
+    "namespace" : "waf",
+    "prefix" : "waf",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "patternCollection" : false,
+    "secureCollection" : false,
+    "generatedNamespace" : false
+  },
+  "http://winery.opentosca.org/test/concrete/patternrefinementmodels" : {
+    "namespace" : "http://winery.opentosca.org/test/concrete/patternrefinementmodels",
+    "prefix" : "patternrefinementmodels",
     "readableName" : "",
     "upstreamRepository" : "",
     "patternCollection" : false,
@@ -30,24 +129,6 @@
     "namespace" : "http://www.example.org",
     "prefix" : "ex",
     "readableName" : "Namespace for creating examples",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
-  "http://winery.opentosca.org/test/patternrefinementmodels" : {
-    "namespace" : "http://winery.opentosca.org/test/patternrefinementmodels",
-    "prefix" : "patternrefinementmodels1",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
-  "http://docs.oasis-open.org/tosca/ns/2011/12" : {
-    "namespace" : "http://docs.oasis-open.org/tosca/ns/2011/12",
-    "prefix" : "tosca",
-    "readableName" : "Predefined TOSCA elements",
     "upstreamRepository" : "",
     "patternCollection" : false,
     "secureCollection" : false,
@@ -80,30 +161,12 @@
     "secureCollection" : false,
     "generatedNamespace" : false
   },
-  "http://www.w3.org/2001/XMLSchema" : {
-    "namespace" : "http://www.w3.org/2001/XMLSchema",
-    "prefix" : "xsd",
-    "readableName" : "W3C XML schema namespace",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
   "http://opentosca.org/policytypes/patterns" : {
     "namespace" : "http://opentosca.org/policytypes/patterns",
     "prefix" : "otptyIgeneral",
     "readableName" : "",
     "upstreamRepository" : "",
     "patternCollection" : true,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
-  "http://winery.opentosca.org/test/servicetemplates" : {
-    "namespace" : "http://winery.opentosca.org/test/servicetemplates",
-    "prefix" : "steIgeneral",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
     "secureCollection" : false,
     "generatedNamespace" : false
   },
@@ -125,42 +188,6 @@
     "secureCollection" : false,
     "generatedNamespace" : false
   },
-  "http://opentosca.org/test/mimic/nodetypes" : {
-    "namespace" : "http://opentosca.org/test/mimic/nodetypes",
-    "prefix" : "otntyIgeneral",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
-  "http://www.opentosca.org/winery/extensions/tosca/2013/02/12" : {
-    "namespace" : "http://www.opentosca.org/winery/extensions/tosca/2013/02/12",
-    "prefix" : "winery",
-    "readableName" : "TOSCA extension by Eclipse Winery",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
-  "http://opentosca.org/servicetemplates" : {
-    "namespace" : "http://opentosca.org/servicetemplates",
-    "prefix" : "otsteIgeneral",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
-  "http://winery.opentosca.org/test/concrete/policytypes" : {
-    "namespace" : "http://winery.opentosca.org/test/concrete/policytypes",
-    "prefix" : "ptyIgeneral",
-    "readableName" : "",
-    "upstreamRepository" : "",
-    "patternCollection" : false,
-    "secureCollection" : false,
-    "generatedNamespace" : false
-  },
   "http://www.w3.org/XML/1998/namespace" : {
     "namespace" : "http://www.w3.org/XML/1998/namespace",
     "prefix" : "xmlns",
@@ -179,9 +206,9 @@
     "secureCollection" : false,
     "generatedNamespace" : false
   },
-  "waf" : {
-    "namespace" : "waf",
-    "prefix" : "waf",
+  "http://opentosca.org/test/patternrefinementmodels" : {
+    "namespace" : "http://opentosca.org/test/patternrefinementmodels",
+    "prefix" : "otIpatternrefinementmodels",
     "readableName" : "",
     "upstreamRepository" : "",
     "patternCollection" : false,
