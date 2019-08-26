@@ -28,6 +28,7 @@
         </Detector>
         <RelationMappings>
             <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" relationType="ntyIgeneral1:JMS-Queue_2.0" direction="ingoing" detectorNode="MessageChannel_w1" refinementNode="Amazon-Queue_w1" id="mapping0"/>
+            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" relationType="ntyIgeneral1:Secure-Jms-Queue-Connection_w1" direction="ingoing" detectorNode="MessageChannel_w1" refinementNode="Amazon-Queue_w1" id="mapping1"/>
         </RelationMappings>
         <RefinementStructure>
             <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="Amazon-Queue_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-Queue_w1" id="Amazon-Queue_w1" winery:x="459" winery:y="155">

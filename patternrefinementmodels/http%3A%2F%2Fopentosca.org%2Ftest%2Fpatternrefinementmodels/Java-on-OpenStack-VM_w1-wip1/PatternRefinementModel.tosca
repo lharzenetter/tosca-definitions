@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Definitions xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:selfservice="http://www.eclipse.org/winery/model/selfservice" xmlns:testwineryopentoscaorg="http://test.winery.opentosca.org" targetNamespace="http://opentosca.org/test/patternrefinementmodels" id="winery-defs-for_otIpatternrefinementmodels-Java-on-OpenStack-VM_w1-wip1">
+    <PatternRefinementModel name="Java-on-OpenStack-VM_w1-wip1" targetNamespace="http://opentosca.org/test/patternrefinementmodels">
+        <Detector>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java_8-Application-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="d_Java_8-Application-w1" winery:x="473" winery:y="239">
+                <Properties/>
+                <Requirements/>
+                <Capabilities/>
+                <Policies>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="nonScaling" policyType="otptyIgeneral:Static-Workload_w1-wip1"/>
+                </Policies>
+                <DeploymentArtifacts/>
+            </NodeTemplate>
+            <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Execution-Environment_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Execution-Environment_w1" id="d_Execution-Environment_w1" winery:x="529" winery:y="445">
+                <Properties/>
+                <Requirements/>
+                <Capabilities/>
+                <Policies/>
+                <DeploymentArtifacts/>
+            </NodeTemplate>
+            <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Private-Cloud_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Private-Cloud_w1" id="d_Private-Cloud_w1" winery:x="722" winery:y="596">
+                <Properties/>
+                <Requirements/>
+                <Capabilities/>
+                <Policies/>
+                <DeploymentArtifacts/>
+            </NodeTemplate>
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="hostedOn" type="ntyIgeneral1:hostedOn" id="d_con_hostedOn_0">
+                <SourceElement ref="d_Java_8-Application-w1"/>
+                <TargetElement ref="d_Execution-Environment_w1"/>
+            </RelationshipTemplate>
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="hostedOn" type="ntyIgeneral1:hostedOn" id="d_con_hostedOn_1">
+                <SourceElement ref="d_Execution-Environment_w1"/>
+                <TargetElement ref="d_Private-Cloud_w1"/>
+            </RelationshipTemplate>
+        </Detector>
+        <RefinementStructure>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java_8-Application-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="rs_Java_8-Application-w1" winery:x="468" winery:y="103"/>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java_8-Runtime-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Runtime-w1" id="rs_Java_8-Runtime-w1" winery:x="471" winery:y="257"/>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Ubuntu_18.04-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Ubuntu_18.04-w1" id="rs_Ubuntu_18.04-w1" winery:x="471" winery:y="402">
+                <Properties>
+                    <Properties xmlns="http://www.example.org">
+                        <VMIP/>
+                        <VMInstanceID/>
+                        <VMType/>
+                        <VMUserName/>
+                        <VMUserPassword/>
+                        <VMPrivateKey/>
+                        <VMPublicKey/>
+                        <VMKeyPairName/>
+                    </Properties>
+                </Properties>
+            </NodeTemplate>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="OpenStack_liberty-12-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:OpenStack_liberty-12-w1" id="rs_OpenStack_liberty-12-w1" winery:x="460" winery:y="530">
+                <Properties>
+                    <Properties xmlns="http://www.example.org">
+                        <HypervisorEndpoint/>
+                        <HypervisorTenantID/>
+                        <HypervisorUserName/>
+                        <HypervisorUserPassword/>
+                    </Properties>
+                </Properties>
+            </NodeTemplate>
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="hostedOn" type="ntyIgeneral1:hostedOn" id="rs_con_hostedOn_0">
+                <SourceElement ref="rs_Java_8-Application-w1"/>
+                <TargetElement ref="rs_Java_8-Runtime-w1"/>
+            </RelationshipTemplate>
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="hostedOn" type="ntyIgeneral1:hostedOn" id="rs_con_hostedOn_1">
+                <SourceElement ref="rs_Java_8-Runtime-w1"/>
+                <TargetElement ref="rs_Ubuntu_18.04-w1"/>
+            </RelationshipTemplate>
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="hostedOn" type="ntyIgeneral1:hostedOn" id="rs_con_hostedOn_2">
+                <SourceElement ref="rs_Ubuntu_18.04-w1"/>
+                <TargetElement ref="rs_OpenStack_liberty-12-w1"/>
+            </RelationshipTemplate>
+        </RefinementStructure>
+        <StayMappings>
+            <StayMapping modelElementType="node" detectorNode="d_Java_8-Application-w1" refinementNode="rs_Java_8-Application-w1" id="stayMap0"/>
+        </StayMappings>
+    </PatternRefinementModel>
+</Definitions>

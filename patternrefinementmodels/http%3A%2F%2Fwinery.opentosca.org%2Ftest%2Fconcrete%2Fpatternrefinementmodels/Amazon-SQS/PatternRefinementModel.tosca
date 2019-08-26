@@ -14,6 +14,11 @@
                 <TargetElement ref="Public-Cloud_w1"/>
             </RelationshipTemplate>
         </Detector>
+        <RelationMappings>
+            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" relationType="ntyIgeneral1:JMS-Queue_2.0" direction="ingoing" detectorNode="MessageChannel_w1" refinementNode="Amazon-Queue_w1" id="mapping0"/>
+            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" relationType="ntyIgeneral1:hostedOn" direction="ingoing" detectorNode="Public-Cloud_w1" refinementNode="AmazonWebServices_w1" id="mapping1"/>
+            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" relationType="ntyIgeneral1:Secure-Jms-Queue-Connection_w1" direction="ingoing" detectorNode="MessageChannel_w1" refinementNode="Amazon-Queue_w1" id="mapping2"/>
+        </RelationMappings>
         <RefinementStructure>
             <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="Amazon-Queue_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-Queue_w1" id="Amazon-Queue_w1" winery:x="426" winery:y="134"/>
             <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="Amazon-SQS_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-SQS_w1" id="Amazon-SQS_w1" winery:x="459" winery:y="304"/>
@@ -27,9 +32,5 @@
                 <TargetElement ref="AmazonWebServices_w1"/>
             </RelationshipTemplate>
         </RefinementStructure>
-        <RelationMappings>
-            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" id="mapping0" detectorNode="MessageChannel_w1" refinementNode="Amazon-Queue_w1" relationType="ntyIgeneral1:JMS-Queue_2.0" direction="ingoing"/>
-            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" id="mapping1" detectorNode="Public-Cloud_w1" refinementNode="AmazonWebServices_w1" relationType="ntyIgeneral1:hostedOn" direction="ingoing"/>
-        </RelationMappings>
     </PatternRefinementModel>
 </Definitions>
