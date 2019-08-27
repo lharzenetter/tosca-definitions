@@ -36,7 +36,7 @@
                 <SourceElement ref="Java_8-Servelet-w1"/>
                 <TargetElement ref="Tomcat_8.5-w1"/>
             </RelationshipTemplate>
-            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="SQL-Con" type="ntyIgeneral1:SQL-Con" id="con_SQL-Con_0">
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="SQL-Connection" type="ntyIgeneral1:SQL-Connection" id="con_SQL-Con_0">
                 <SourceElement ref="Java_8-Servelet-w1"/>
                 <TargetElement ref="MySQL-Database_5.7-w1"/>
             </RelationshipTemplate>
@@ -56,7 +56,7 @@
                 <SourceElement ref="Java_8-Servelet-w1_2"/>
                 <TargetElement ref="Tomcat_8.5-w1_2"/>
             </RelationshipTemplate>
-            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="SQL-Con" type="ntyIgeneral1:SQL-Con" id="con_SQL-Con_1">
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="SQL-Connection" type="ntyIgeneral1:SQL-Connection" id="con_SQL-Con_1">
                 <SourceElement ref="Java_8-Servelet-w1_2"/>
                 <TargetElement ref="MySQL-Database_5.7-w1"/>
             </RelationshipTemplate>

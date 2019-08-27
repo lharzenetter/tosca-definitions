@@ -7,7 +7,7 @@
                 <Requirements/>
                 <Capabilities/>
                 <Policies>
-                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Unpredictable-Workload_w1-wip1"/>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Unpredictable-Workload_w1"/>
                 </Policies>
                 <DeploymentArtifacts/>
             </NodeTemplate>

@@ -47,7 +47,7 @@
                 <SourceElement ref="Relational-Database_w1"/>
                 <TargetElement ref="Private-Cloud_w1"/>
             </RelationshipTemplate>
-            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="con_10" type="ntyIgeneral1:SQL-Con" id="con_10">
+            <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="con_10" type="ntyIgeneral1:SQL-Connection" id="con_10">
                 <SourceElement ref="Java_8-Application-w1"/>
                 <TargetElement ref="Relational-Database_w1"/>
             </RelationshipTemplate>

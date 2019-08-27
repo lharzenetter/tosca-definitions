@@ -18,7 +18,7 @@
             </NodeTemplate>
             <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java_8-Servelet-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Servelet-w1" id="d_Java_8-Servelet-w1" winery:x="465" winery:y="203">
                 <Policies>
-                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="unpredictableWorkload" policyType="otptyIgeneral:Unpredictable-Workload_w1-wip1"/>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="unpredictableWorkload" policyType="otptyIgeneral:Unpredictable-Workload_w1"/>
                 </Policies>
             </NodeTemplate>
             <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="con_1" type="ntyIgeneral1:hostedOn" id="con_1">

@@ -4,7 +4,7 @@
         <Detector>
             <NodeTemplate xmlns:otntyIgeneral1="http://opentosca.org/test/nodetypes" name="Application_w1" minInstances="1" maxInstances="1" type="otntyIgeneral1:Application_w1" id="d_Application_w1" winery:x="430" winery:y="135">
                 <Policies>
-                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Unpredictable-Workload_w1-wip1"/>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Unpredictable-Workload_w1"/>
                 </Policies>
             </NodeTemplate>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Platform-as-a-Service_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Platform-as-a-Service_w1" id="d_Platform-as-a-Service_w1" winery:x="490" winery:y="303"/>

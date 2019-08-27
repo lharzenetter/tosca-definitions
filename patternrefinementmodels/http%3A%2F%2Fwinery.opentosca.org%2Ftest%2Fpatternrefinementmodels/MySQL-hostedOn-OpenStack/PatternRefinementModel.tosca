@@ -70,7 +70,7 @@
             </RelationshipTemplate>
         </RefinementStructure>
         <RelationMappings>
-            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" id="mapping0" detectorNode="Relational-Database_w1" refinementNode="MySQL-Database_5.7-w1" relationType="ntyIgeneral1:SQL-Con" direction="ingoing" validSourceOrTarget="ntyIgeneral3:Java_8-Application-w1"/>
+            <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" id="mapping0" detectorNode="Relational-Database_w1" refinementNode="MySQL-Database_5.7-w1" relationType="ntyIgeneral1:SQL-Connection" direction="ingoing" validSourceOrTarget="ntyIgeneral3:Java_8-Application-w1"/>
             <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" id="mapping1" detectorNode="Private-Cloud_w1" refinementNode="OpenStack_liberty-12-w1" relationType="ntyIgeneral1:hostedOn" direction="ingoing"/>
         </RelationMappings>
     </PatternRefinementModel>
