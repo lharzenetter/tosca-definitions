@@ -41,6 +41,8 @@
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <autoScaling>true</autoScaling>
+                        <scalingMetric>Network Output</scalingMetric>
+                        <timeSpan>5 minutes</timeSpan>
                     </Properties>
                 </Properties>
             </NodeTemplate>

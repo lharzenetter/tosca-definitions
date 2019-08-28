@@ -6,6 +6,14 @@
                 <winery:key>autoScaling</winery:key>
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
+            <winery:properties>
+                <winery:key>scalingMetric</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>timeSpan</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
         </winery:PropertiesDefinition>
     </NodeType>
 </Definitions>
