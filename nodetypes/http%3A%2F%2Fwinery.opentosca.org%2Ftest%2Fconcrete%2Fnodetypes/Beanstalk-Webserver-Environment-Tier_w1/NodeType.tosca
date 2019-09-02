@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Definitions xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:winery="http://www.opentosca.org/winery/extensions/tosca/2013/02/12" xmlns:selfservice="http://www.eclipse.org/winery/model/selfservice" xmlns:testwineryopentoscaorg="http://test.winery.opentosca.org" targetNamespace="hhttp://winery.opentosca.org/test/concrete/nodetypes" id="winery-defs-for_ntyIgeneral4-Beanstalk-Webserver-Environment-Tier_w1">
+    <NodeType name="Beanstalk-Webserver-Environment-Tier_w1" targetNamespace="http://winery.opentosca.org/test/concrete/nodetypes">
+        <winery:PropertiesDefinition elementname="properties" namespace="http://winery.opentosca.org/test/concrete/nodetypes/propertiesdefinition/winery">
+            <winery:properties>
+                <winery:key>AutoScaling</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>ScalingMetric</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+            <winery:properties>
+                <winery:key>TimeSpan</winery:key>
+                <winery:type>xsd:string</winery:type>
+            </winery:properties>
+        </winery:PropertiesDefinition>
+    </NodeType>
+</Definitions>

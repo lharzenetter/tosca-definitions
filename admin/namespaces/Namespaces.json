@@ -44,6 +44,15 @@
     "secureCollection" : false,
     "patternCollection" : false
   },
+  "https://examples.opentosca.org/edmm/nodetypes/propertiesdefinition/winery" : {
+    "namespace" : "https://examples.opentosca.org/edmm/nodetypes/propertiesdefinition/winery",
+    "prefix" : "ntypdInodetypes1",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "generatedNamespace" : false,
+    "secureCollection" : false,
+    "patternCollection" : false
+  },
   "http://winery.opentosca.org/test/servicetemplates" : {
     "namespace" : "http://winery.opentosca.org/test/servicetemplates",
     "prefix" : "steIgeneral",
@@ -164,6 +173,15 @@
   "http://winery.opentosca.org/test/relationshiptypes" : {
     "namespace" : "http://winery.opentosca.org/test/relationshiptypes",
     "prefix" : "ntyIgeneral1",
+    "readableName" : "",
+    "upstreamRepository" : "",
+    "generatedNamespace" : false,
+    "secureCollection" : false,
+    "patternCollection" : false
+  },
+  "https://examples.opentosca.org/edmm/nodetypes" : {
+    "namespace" : "https://examples.opentosca.org/edmm/nodetypes",
+    "prefix" : "ntyIgeneral4",
     "readableName" : "",
     "upstreamRepository" : "",
     "generatedNamespace" : false,

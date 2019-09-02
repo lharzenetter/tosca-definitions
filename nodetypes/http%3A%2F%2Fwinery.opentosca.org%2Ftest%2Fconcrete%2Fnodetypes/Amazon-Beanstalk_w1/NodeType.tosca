@@ -3,15 +3,7 @@
     <NodeType name="Amazon-Beanstalk_w1" targetNamespace="http://winery.opentosca.org/test/concrete/nodetypes">
         <winery:PropertiesDefinition elementname="properties" namespace="http://winery.opentosca.org/test/concrete/nodetypes/propertiesdefinition/winery">
             <winery:properties>
-                <winery:key>autoScaling</winery:key>
-                <winery:type>xsd:string</winery:type>
-            </winery:properties>
-            <winery:properties>
-                <winery:key>scalingMetric</winery:key>
-                <winery:type>xsd:string</winery:type>
-            </winery:properties>
-            <winery:properties>
-                <winery:key>timeSpan</winery:key>
+                <winery:key>Account</winery:key>
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
         </winery:PropertiesDefinition>

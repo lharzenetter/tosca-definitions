@@ -1,0 +1,13 @@
+{
+  "oneToOneMapping" : [ {
+    "edmmType" : "hosted_on",
+    "toscaType" : "{http://winery.opentosca.org/test/relationshiptypes}hostedOn"
+  } ],
+  "edmmTypeMapping" : [ {
+    "edmmType" : "compute",
+    "toscaType" : "{http://winery.opentosca.org/test/concrete/nodetypes}Amazon-Beanstalk_w1"
+  }, {
+    "edmmType" : "software_component",
+    "toscaType" : "{http://opentosca.org/test/nodetypes}Application_w1"
+  } ]
+}
