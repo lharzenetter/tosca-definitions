@@ -11,7 +11,7 @@
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
             <winery:properties>
-                <winery:key>masterKey</winery:key>
+                <winery:key>MasterKey</winery:key>
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
         </winery:PropertiesDefinition>

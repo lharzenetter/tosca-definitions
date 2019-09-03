@@ -23,7 +23,7 @@
                 <Policies>
                     <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="stateless" policyType="otptyIgeneral:Stateless-Component_w1"/>
                     <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="workload" policyType="otptyIgeneral:Unpredictable-Workload_w1"/>
-                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="ui" policyType="otptyIgeneral:User-Interface-Component_w1"/>
+                    <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="ui" policyType="otptyIgeneral:Processor-Component_w1"/>
                 </Policies>
             </NodeTemplate>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Public-Cloud" minInstances="1" maxInstances="1" type="ntyIgeneral:Public-Cloud_w1" id="Public-Cloud_w1" winery:x="930" winery:y="490">
@@ -44,6 +44,11 @@
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Execution-Environment" minInstances="1" maxInstances="1" type="ntyIgeneral:Execution-Environment_w1" id="Execution-Environment_w1" winery:x="1513" winery:y="250"/>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Private-Cloud" minInstances="1" maxInstances="1" type="ntyIgeneral:Private-Cloud_w1" id="Private-Cloud_w1" winery:x="1513" winery:y="400"/>
             <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Relational-Database" minInstances="1" maxInstances="1" type="ntyIgeneral:Relational-Database_w1" id="Relational-Database_w1" winery:x="1210" winery:y="90">
+                <Properties>
+                    <Properties>
+                        <DatabaseName>orders</DatabaseName>
+                    </Properties>
+                </Properties>
                 <Policies>
                     <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="obscurity" policyType="otptyIgeneral:Information-Obscurity_w1"/>
                 </Policies>

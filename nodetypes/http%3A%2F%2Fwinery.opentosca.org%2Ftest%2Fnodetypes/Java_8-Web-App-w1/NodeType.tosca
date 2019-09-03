@@ -7,7 +7,7 @@
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
         </winery:PropertiesDefinition>
-        <DerivedFrom xmlns:otntyIgeneral1="http://opentosca.org/test/nodetypes" typeRef="otntyIgeneral1:Application_w1"/>
+        <DerivedFrom xmlns:otntyIgeneral1="http://winery.opentosca.org/test/nodetypes" typeRef="otntyIgeneral1:Java_8-Application-w1"/>
         <RequirementDefinitions>
             <RequirementDefinition xmlns:rtyIgeneral="http://winery.opentosca.org/test/requirementtypes" name="Linux VM" requirementType="rtyIgeneral:Linux-OperatingSystem_w1" lowerBound="1" upperBound="1"/>
         </RequirementDefinitions>

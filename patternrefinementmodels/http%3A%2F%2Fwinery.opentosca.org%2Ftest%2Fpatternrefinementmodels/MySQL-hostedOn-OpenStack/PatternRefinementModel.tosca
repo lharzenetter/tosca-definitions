@@ -10,7 +10,7 @@
             </RelationshipTemplate>
         </Detector>
         <RefinementStructure>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="OpenStack_liberty-12-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:OpenStack_liberty-12-w1" id="OpenStack_liberty-12-w1" winery:x="291" winery:y="439">
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Public Cloud" minInstances="1" maxInstances="1" type="ntyIgeneral3:OpenStack_liberty-12-w1" id="OpenStack_liberty-12-w1" winery:x="291" winery:y="439">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <HypervisorEndpoint/>
@@ -24,7 +24,7 @@
                 <Policies/>
                 <DeploymentArtifacts/>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Ubuntu_18.04-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Ubuntu_18.04-w1" id="Ubuntu_18.04-w1" winery:x="481" winery:y="316">
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Ubuntu 18.04" minInstances="1" maxInstances="1" type="ntyIgeneral3:Ubuntu_18.04-w1" id="Ubuntu_18.04-w1" winery:x="481" winery:y="316">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <VMIP/>
@@ -42,14 +42,14 @@
                 <Policies/>
                 <DeploymentArtifacts/>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="MySQL-DBMS_5.7-w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:MySQL-DBMS_5.7-w1" id="MySQL-DBMS_5.7-w1" winery:x="488" winery:y="180">
+            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="MySQL DBMS 5.7" minInstances="1" maxInstances="1" type="ntyIgeneral2:MySQL-DBMS_5.7-w1" id="MySQL-DBMS_5.7-w1" winery:x="488" winery:y="180">
                 <Properties/>
                 <Requirements/>
                 <Capabilities/>
                 <Policies/>
                 <DeploymentArtifacts/>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="MySQL-Database_5.7-w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:MySQL-Database_5.7-w1" id="MySQL-Database_5.7-w1" winery:x="482" winery:y="60">
+            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="MySQL Database 5.7" minInstances="1" maxInstances="1" type="ntyIgeneral2:MySQL-Database_5.7-w1" id="MySQL-Database_5.7-w1" winery:x="482" winery:y="60">
                 <Properties/>
                 <Requirements/>
                 <Capabilities/>

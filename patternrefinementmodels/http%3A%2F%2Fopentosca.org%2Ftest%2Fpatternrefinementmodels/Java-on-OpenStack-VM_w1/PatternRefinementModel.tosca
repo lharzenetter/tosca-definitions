@@ -35,9 +35,9 @@
             </RelationshipTemplate>
         </Detector>
         <RefinementStructure>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java_8-Application-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="rs_Java_8-Application-w1" winery:x="468" winery:y="103"/>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java_8-Runtime-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Runtime-w1" id="rs_Java_8-Runtime-w1" winery:x="471" winery:y="257"/>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Ubuntu_18.04-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:Ubuntu_18.04-w1" id="rs_Ubuntu_18.04-w1" winery:x="471" winery:y="402">
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java 8 Application" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Application-w1" id="rs_Java_8-Application-w1" winery:x="468" winery:y="103"/>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Java 8 Runtime" minInstances="1" maxInstances="1" type="ntyIgeneral3:Java_8-Runtime-w1" id="rs_Java_8-Runtime-w1" winery:x="471" winery:y="257"/>
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Ubuntu 18.04" minInstances="1" maxInstances="1" type="ntyIgeneral3:Ubuntu_18.04-w1" id="rs_Ubuntu_18.04-w1" winery:x="471" winery:y="402">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <VMIP/>
@@ -51,7 +51,7 @@
                     </Properties>
                 </Properties>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="OpenStack_liberty-12-w1" minInstances="1" maxInstances="1" type="ntyIgeneral3:OpenStack_liberty-12-w1" id="rs_OpenStack_liberty-12-w1" winery:x="460" winery:y="530">
+            <NodeTemplate xmlns:ntyIgeneral3="http://winery.opentosca.org/test/nodetypes" name="Private Cloud" minInstances="1" maxInstances="1" type="ntyIgeneral3:OpenStack_liberty-12-w1" id="rs_OpenStack_liberty-12-w1" winery:x="460" winery:y="530">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <HypervisorEndpoint/>

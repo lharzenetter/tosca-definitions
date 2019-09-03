@@ -3,11 +3,7 @@
     <NodeType name="Relational-Database-Service_w1" targetNamespace="http://winery.opentosca.org/test/concrete/nodetypes">
         <winery:PropertiesDefinition elementname="properties" namespace="http://winery.opentosca.org/test/concrete/nodetypes/propertiesdefinition/winery">
             <winery:properties>
-                <winery:key>serverSideEncryption</winery:key>
-                <winery:type>xsd:string</winery:type>
-            </winery:properties>
-            <winery:properties>
-                <winery:key>masterKey</winery:key>
+                <winery:key>Account</winery:key>
                 <winery:type>xsd:string</winery:type>
             </winery:properties>
         </winery:PropertiesDefinition>

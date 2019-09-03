@@ -8,19 +8,18 @@
                 <Capabilities/>
                 <Policies>
                     <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="exactlyonce" policyType="otptyIgeneral:Exactly-Once-Delivery_w1"/>
-                </Policies>
-                <DeploymentArtifacts/>
-            </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Message-oriented-Middleware_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Message-oriented-Middleware_w1" id="d_Message-oriented-Middleware_w1" winery:x="625" winery:y="268">
-                <Properties/>
-                <Requirements/>
-                <Capabilities/>
-                <Policies>
                     <Policy xmlns:otptyIgeneral="http://opentosca.org/policytypes/patterns" name="obscurity" policyType="otptyIgeneral:Information-Obscurity_w1"/>
                 </Policies>
                 <DeploymentArtifacts/>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="AmazonWebServices_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:AmazonWebServices_w1" id="d_AmazonWebServices_w1" winery:x="474" winery:y="442"/>
+            <NodeTemplate xmlns:ntyIgeneral="http://winery.opentosca.org/test/patterns/nodetypes" name="Message-oriented-Middleware_w1" minInstances="1" maxInstances="1" type="ntyIgeneral:Message-oriented-Middleware_w1" id="d_Message-oriented-Middleware_w1" winery:x="625" winery:y="268"/>
+            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="AmazonWebServices_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:AmazonWebServices_w1" id="d_AmazonWebServices_w1" winery:x="474" winery:y="442">
+                <Properties>
+                    <Properties>
+                        <Region/>
+                    </Properties>
+                </Properties>
+            </NodeTemplate>
             <RelationshipTemplate xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" name="hostedOn" type="ntyIgeneral1:hostedOn" id="d_con_hostedOn_0">
                 <SourceElement ref="d_MessageChannel_w1"/>
                 <TargetElement ref="d_Message-oriented-Middleware_w1"/>
@@ -35,10 +34,12 @@
             <RelationMapping xmlns:ntyIgeneral1="http://winery.opentosca.org/test/relationshiptypes" relationType="ntyIgeneral1:Secure-Jms-2.0-Queue-Connection_w1" direction="ingoing" detectorNode="d_MessageChannel_w1" refinementNode="rs_Amazon-Queue_w1" id="mapping2"/>
         </RelationMappings>
         <RefinementStructure>
-            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="Amazon-Queue_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-Queue_w1" id="rs_Amazon-Queue_w1" winery:x="426" winery:y="134">
+            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="Queue" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-Queue_w1" id="rs_Amazon-Queue_w1" winery:x="426" winery:y="134">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
                         <type>FIFO</type>
+                        <ServerSideEncryption>Yes</ServerSideEncryption>
+                        <MasterKey>default</MasterKey>
                     </Properties>
                 </Properties>
                 <Requirements/>
@@ -46,11 +47,10 @@
                 <Policies/>
                 <DeploymentArtifacts/>
             </NodeTemplate>
-            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="Amazon-SQS_w1" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-SQS_w1" id="rs_Amazon-SQS_w1" winery:x="459" winery:y="304">
+            <NodeTemplate xmlns:ntyIgeneral2="http://winery.opentosca.org/test/concrete/nodetypes" name="MoM Provider" minInstances="1" maxInstances="1" type="ntyIgeneral2:Amazon-SQS_w1" id="rs_Amazon-SQS_w1" winery:x="459" winery:y="304">
                 <Properties>
                     <Properties xmlns="http://www.example.org">
-                        <serverSideEncryption>true</serverSideEncryption>
-                        <masterKey>default</masterKey>
+                        <Account/>
                     </Properties>
                 </Properties>
                 <Requirements/>
